@@ -1,0 +1,9 @@
+~$ pwd
+/home/user
+~$ mkdir shell00
+~$ cd shell00
+~/shell00$ mkdir ex00
+~/shell00$ cd ex00
+~/shell00/ex00$ nano z
+~/shell00/ex00$ cat z
+Z
