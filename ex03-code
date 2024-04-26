@@ -1,0 +1,30 @@
+~/shell00/ex05$ \cd ..
+~/shell00$ mkdir ex03
+~/shell00$ cd ex03
+~/shell00/ex03$ touch id_rosa_pub
+~/shell00/ex03$ ssh-keygen -t ed25519 -C "rundbarqawi30@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/user/.ssh/id_ed25519): y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in y
+Your public key has been saved in y.pub
+The key fingerprint is:
+SHA256:u/IimTW3EF9093mvNYE8u6xr34Lkt7/MxtJBpq8M9B8 rundbarqawi30@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|          . . .  |
+|         . ......|
+|      .   .  + =o|
+|       oS. .  * +|
+|      + o....o oo|
+|     + +..o.o.=Eo|
+|    + o .. +o**=.|
+|     . +o .o==BB.|
++----[SHA256]-----+
+~/shell00/ex03$ cat y.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF3+hu73tTANc+TG7JhbdWDfHtH/EGM7qZkc7PWBb6Kh rundbarqawi30@gmail.com
+~/shell00/ex03$ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF3+hu73tTANc+TG7JhbdWDfHtH/EGM7qZkc7PWBb6Kh rundbarqawi30@gmail.com" > id_rosa_pub
+~/shell00/ex03$ cat id_rosa_pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF3+hu73tTANc+TG7JhbdWDfHtH/EGM7qZkc7PWBb6Kh rundbarqawi30@gmail.com
