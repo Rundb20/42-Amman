@@ -1,0 +1,66 @@
+~/shell00$ mkdir ex02
+~/shell00$ cd ex02
+~/shell00/ex02$ mkdir test0 test2
+~/shell00/ex02$ touch test1 test3 test4 test5
+~/shell00/ex02$ ls -l
+total 4
+-rw-r--r-- 1 user user 0 Apr 26 13:11 ex02.tar
+-rw-r--r-- 1 user user 0 Apr 26 13:10 nano.tar
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test0
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test1
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test2
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test3
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test4
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test5
+~/shell00/ex02$ rm test5
+~/shell00/ex02$ ln test3 test5
+~/shell00/ex02$ ls -l
+total 4
+-rw-r--r-- 1 user user 0 Apr 26 13:11 ex02.tar
+-rw-r--r-- 1 user user 0 Apr 26 13:10 nano.tar
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test0
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test1
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test2
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test3
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test4
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test5
+~/shell00/ex02$ ln -s test6 test0
+~/shell00/ex02$ ls -l
+total 4
+-rw-r--r-- 1 user user 0 Apr 26 13:11 ex02.tar
+-rw-r--r-- 1 user user 0 Apr 26 13:10 nano.tar
+drwxr-xr-x 2 user user 3 Apr 26 13:21 test0
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test1
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test2
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test3
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test4
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test5
+~/shell00/ex02$ ln -s test0 test6
+~/shell00/ex02$ ls -l
+total 5
+-rw-r--r-- 1 user user 0 Apr 26 13:11 ex02.tar
+-rw-r--r-- 1 user user 0 Apr 26 13:10 nano.tar
+drwxr-xr-x 2 user user 3 Apr 26 13:21 test0
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test1
+drwxr-xr-x 2 user user 2 Apr 26 13:16 test2
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test3
+-rw-r--r-- 1 user user 0 Apr 26 13:17 test4
+-rw-r--r-- 2 user user 0 Apr 26 13:17 test5
+lrwxrwxrwx 1 user user 5 Apr 26 13:22 test6 -> test0
+~/shell00/ex02$ chmod 715 test0
+~/shell00/ex02$ chmod 714 test1
+~/shell00/ex02$ chmod 504 test2
+~/shell00/ex02$ chmod 404 test3
+~/shell00/ex02$ chmod 641 test4
+~/shell00/ex02$ chmod 404 test5
+~/shell00/ex02$ ls -l
+total 5
+-rw-r--r-- 1 user user 0 Apr 26 13:11 ex02.tar
+-rw-r--r-- 1 user user 0 Apr 26 13:10 nano.tar
+drwx--xr-x 2 user user 3 Apr 26 13:21 test0
+-rwx--xr-- 1 user user 0 Apr 26 13:17 test1
+dr-x---r-- 2 user user 2 Apr 26 13:16 test2
+-r-----r-- 2 user user 0 Apr 26 13:17 test3
+-rw-r----x 1 user user 0 Apr 26 13:17 test4
+-r-----r-- 2 user user 0 Apr 26 13:17 test5
+lrwxrwxrwx 1 user user 5 Apr 26 13:22 test6 -> test0
