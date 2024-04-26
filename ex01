@@ -1,0 +1,13 @@
+$ cd shell00
+~/shell00$ nano testshell00
+~/shell00$ ls
+ex00  testshell00
+~/shell00$ ls -l
+total 2
+drwxr-xr-x 2 user user  3 Apr 26 12:58 ex00
+-rw-r--r-- 1 user user 40 Apr 26 13:05 testshell00
+~/shell00$ chmod 455 testshell00
+~/shell00$ ls -l
+total 2
+drwxr-xr-x 2 user user  3 Apr 26 12:58 ex00
+-r--r-xr-x 1 user user 40 Apr 26 13:05 testshell00
