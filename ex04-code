@@ -1,0 +1,14 @@
+~$ cd shell00
+~/shell00$ mkdir ex04
+~/shell00$ cd ex04
+~/shell00/ex04$ ls -l
+total 0
+~/shell00/ex04$ ls -ump
+~/shell00/ex04$ touch midLs
+~/shell00/ex04$ ls
+midLs
+~/shell00/ex04$ echo "ls -ump" > midLs
+~/shell00/ex04$ ls
+midLs
+~/shell00/ex04$ cat midLs
+ls -ump
