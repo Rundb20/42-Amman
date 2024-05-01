@@ -1,0 +1,8 @@
+%> mkdir ex03
+%> cd ex03
+
+%> vim count_files.sh
+
+
+#!/bin/sh
+find . | wc -l | sed 's/ //g'
