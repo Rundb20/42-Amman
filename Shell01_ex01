@@ -1,7 +1,7 @@
-%> mkdir ex01
-%> cd ex01
+mkdir ex01
+ cd ex01
 
-%> vim print_groups.sh
+vim print_groups.sh
 
 
 #!/bin/sh
