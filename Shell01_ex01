@@ -1,0 +1,10 @@
+%> mkdir ex01
+%> cd ex01
+
+%> vim print_groups.sh
+
+
+#!/bin/sh
+groups $FT_USER | tr " " "," | tr -d "\n"
+
+
