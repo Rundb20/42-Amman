@@ -1,0 +1,6 @@
+mkdir ex06
+ cd ex06
+
+ vim skip.sh
+#!/bin/bash
+ls -l | awk 'NR % 2 == 1'
