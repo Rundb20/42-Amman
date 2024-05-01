@@ -1,0 +1,8 @@
+%> mkdir ex02
+%> cd ex02
+
+%> vim find_sh.sh
+
+
+#!/bin/sh
+find . -type f -name '*.sh' -exec basename {} .sh \;
