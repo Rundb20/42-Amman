@@ -1,0 +1,7 @@
+%> mkdir ex05
+%> cd ex05
+
+%> touch \"\\\?\$\*\'MaRViN\'\*\$\?\\\"
+
+%> chmod u-x, u+rw, g-rw, g+x, o-wx, o+r \"\\\?\$\*\'MaRViN\'\*\$\?\\\"
+%> touch -amt 202310021221.00 \"\\\?\$\*\'MaRViN\'\*\$\?\\\"
