@@ -1,0 +1,8 @@
+%> mkdir ex04
+%> cd ex04
+
+%> vim MAC.sh
+
+#!/bin/sh
+ifconfig | grep 'ether ' | cut -b 8-24
+
