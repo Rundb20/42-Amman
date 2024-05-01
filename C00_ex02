@@ -1,0 +1,18 @@
+mkdir ex02
+cd ex02
+
+vim ft_print_reverse_alphabet.c
+
+#include <unistd.h>
+
+void	ft_print_reverse_alphabet(void)
+{
+	int	i;
+
+	i = 'z';
+	while (i >= 'a')
+	{
+		write(1, &i, 1);
+		i--;
+	}
+}
